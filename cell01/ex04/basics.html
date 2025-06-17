@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Basics</title>
+  <style>
+    body {
+      background-color: light brown;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    h1 {
+      color: white;
+      text-align: center;
+      font-size: 3em;
+      margin: 30px 0;
+    }
+
+    .images {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+    }
+
+    .shop {
+      text-align: center;
+    }
+    .shop img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover; /* ทำให้ภาพไม่บิดเบี้ยวขณะปรับขนาด */
+      border-radius: 10px;
+    }
+
+    hr {
+      margin-top: 40px;
+      border: 1px solid black;
+    }
+
+    .footer {
+      text-align: right;
+      font-family: monospace;
+      font-style: italic;
+      padding: 10px 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- หัวข้อใหญ่ -->
+  <h1>✨</h1>
+
+  <!-- รูปภาพร้านค้าออนไลน์ 2 รูป -->
+  <div class="images">
+    <div class="shop">
+      <img src="https://down-zl-th.img.susercontent.com/th-11134233-7rasd-m6wbv2226g8l8a_tn.webp" alt="Shop 1">
+      <div><a href="https://shopee.co.th/potionhouse.th?categoryId=100630&entryPoint=ShopByPDP&itemId=20690453485&upstream=search">Visit Shop 1</a></div>
+    </div>
+    <div class="shop">
+      <img src="https://down-zl-th.img.susercontent.com/a1617ab7a152047a8c49481246df1304_tn.webp" alt="Shop 2">
+      <div><a href="https://shopee.co.th/crazy_pet_shop?entryPoint=ShopBySearch&searchKeyword=crazy%20pet%20shop">Visit Shop 2</a></div>
+    </div>
+  </div>
+
+  <!-- เส้นคั่น -->
+  <hr>
+
+  <!-- ลิขสิทธิ์ด้านล่าง -->
+  <div class="footer">© wil 2021</div>
+
+</body>
+</html>
