@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Profile Card</title>
+  <link href="https://fonts.googleapis.com/css?family=Quicksand:700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(135deg, #f7d1ba 0%, #d6dcd8 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Quicksand', Arial, sans-serif;
+      margin: 0;
+    }
+    .profile-card {
+      background: #f1f8e9;
+      border-radius: 22px;
+      box-shadow: 0 8px 32px #e203ff80;
+      padding: 36px 32px 28px 32px;
+      min-width: 320px;
+      max-width: 340px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border: 2px solid #813400;
+    }
+    .profile-title {
+      font-size: 1.7rem;
+      color: #5d2b00;
+      margin-bottom: 18px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      text-align: center;
+    }
+    .profile-table {
+      display: table;
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 0;
+    }
+    .profile-row {
+      display: table-row;
+    }
+    .profile-cell {
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center;
+      padding: 0;
+    }
+    .profile-pic {
+      width: 96px;
+      height: 96px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #ffaeae;
+      margin-bottom: 12px;
+      box-shadow: 0 2px 12px #a5d6a780;
+    }
+    .profile-login {
+      font-size: 1.1rem;
+      color: #cc0088;
+      margin-bottom: 6px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+    .profile-desc {
+      font-size: 1rem;
+      color: #522500;
+      margin-bottom: 14px;
+      font-style: italic;
+      letter-spacing: 0.5px;
+    }
+    .profile-socials {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 18px;
+      justify-content: center;
+    }
+    .profile-socials img {
+      width: 28px;
+      height: 28px;
+      border-radius: 8px;
+      transition: transform 0.2s;
+      box-shadow: 0 2px 8px #a5d6a760;
+      background: #fff;
+    }
+    .profile-socials img:hover {
+      transform: scale(1.15) rotate(-8deg);
+      box-shadow: 0 4px 16px #341b00;
+    }
+    .contact-btn {
+      margin-top: 18px;
+      background: linear-gradient(90deg, #ffbf6b 60%, #d1675a 100%);
+      color: #000000;
+      border: none;
+      border-radius: 18px;
+      padding: 12px 38px;
+      font-size: 1.1rem;
+      font-family: inherit;
+      box-shadow: 0 4px 16px #ff20c480;
+      cursor: pointer;
+      transition: background 0.2s;
+      font-weight: bold;
+      letter-spacing: 1px;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .contact-btn:hover {
+      background: linear-gradient(90deg, #398eb2 60%, #153d52 100%);
+    }
+  </style>
+</head>
+<body>
+  <div class="profile-card">
+    <div class="profile-title">My Profile</div>
+    <div class="profile-table">
+      <div class="profile-row">
+        <div class="profile-cell">
+          <img class="profile-pic" src=https://cdn.discordapp.com/attachments/1336027078805684257/1384552484646948965/1718187164img1718187165.jpg?ex=6852d87c&is=685186fc&hm=ea13cc1d410cd47f78a100346cfb19f1175449b2d7d1609e93970b87bf6a2549&" alt="Profile Picture">
+        </div>
+      </div>
+      <div class="profile-row">
+        <div class="profile-cell">
+          <div class="profile-login">"Kwankanung"</div>
+        </div>
+      </div>
+      <div class="profile-row">
+        <div class="profile-cell">
+          <div class="profile-desc">Mook🫶</div>
+        </div>
+      </div>
+      <div class="profile-row">
+        <div class="profile-cell">
+          <div class="profile-socials">
+            <a href="https://www.facebook.com/" target="_blank"><img src="https://images.squarespace-cdn.com/content/v1/5a6a55c0f09ca458ce51a4cf/1709220745957-ZYQV57FZSH4ZWXHSRXW6/2024-facebook.jpg" alt="facebook" style="background:#fff;"/></a>
+            <a href="https://twitter.com/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/twitter.svg" alt="Twitter" style="background:#fff;"/></a>
+            <a href="https://www.instagram.com/" target="_blank"_blank"><img src="https://media.discordapp.net/attachments/1336027078805684257/1384533278974808275/Insta2.jpg?ex=6852c699&is=68517519&hm=62848fbfb3690dcb4b0ae547df1bc554e1db508e5a7cf413467fd68a63608974&=&format=webp&width=778&height=778" alt="instagram" style="background:#fff;"/></a>
+                      <a href="https://www.line.me/th/" target="_blank"><img src="https://media.discordapp.net/attachments/1336027078805684257/1384529404713242716/download_2.jpg?ex=6852c2fd&is=6851717d&hm=e5c1b539832c2369ad2f2da57a4d8533602302d6c00f2275ef6b7f05816bd004&=&format=webp&width=550&height=550" alt="Line" style="background:#fff;"/></a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="mailto:your@email.com" class="contact-btn">Contact</a>
+  </div>
+</body>
+</html>
