@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Parallax Web Page</title>
+  <link rel="stylesheet" href="parallax.css">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Quicksand', Arial, sans-serif;
+      background: #222;
+      color: #fff;
+    }
+    .parallax-section {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      text-align: center;
+    }
+    .parallax-bg {
+      /* Replace with your own image URL if desired */
+      background-image: url('https://media.discordapp.net/attachments/1336027078805684257/1384438220804329513/1709393727img1709393728.jpg?ex=68526e11&is=68511c91&hm=b4821dcb241dfa315df3d1fd1c44ac46ba40679359e9786a808fa049e8d45b58&=&format=webp');
+      min-height: 100vh;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .parallax-bg .message {
+      background: rgb(255, 168, 196);
+      padding: 32px 48px;
+      border-radius: 18px;
+      font-size: 2rem;
+      color: #fff;
+      box-shadow: 0 4px 24px #0006;
+    }
+    .black-block {
+      background: #111;
+      min-height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.7rem;
+      letter-spacing: 1px;
+      box-shadow: 0 4px 24px rgb(255, 135, 223);
+    }
+    .parallax-bg2 {
+      /* Replace with your own image URL if desired */
+      background-image: url('https://media.discordapp.net/attachments/1336027078805684257/1384438220602867733/image1605799398.jpg?ex=68526e11&is=68511c91&hm=35381b38d4ee1c210eb4a46a602dd2b2289680a05d7034ba552019c5f7a0cd73&=&format=webp');
+      min-height: 100vh;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .parallax-bg2 .message {
+      background: rgb(255, 154, 204);
+      padding: 32px 48px;
+      border-radius: 18px;
+      font-size: 2rem;
+      color: #ffffff;
+      box-shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
+    }
+    @media (max-width: 700px) {
+      .parallax-bg .message,
+      .parallax-bg2 .message {
+        font-size: 1.1rem;
+        padding: 16px 10vw;
+      }
+      .black-block {
+        font-size: 1.1rem;
+        padding: 0 10vw;
+      }
+    }
+  </style>
+</head>
+<body>
+  <section class="parallax-section parallax-bg">
+    <div class="message">
+      Before I get my grades out
+    </div>
+  </section>
+  <section class="parallax-section black-block">
+    <div>
+      And
+    </div>
+  </section>
+  <section class="parallax-section parallax-bg2">
+    <div class="message">
+      After my grades out 😭😭
+    </div>
+  </section>
+</body>
+</html>
